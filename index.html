@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="calc">
+            <input type="text" id="res" placeholder="00000000000000000">
+            
+            <input type="button" value="C" onclick="allClear()" class="btn btn-func">
+            <input type="button" value="←" onclick="backSpace()" class="btn btn-func">
+            <input type="button" value="%" onclick="solve('%')" class="btn">
+            <input type="button" value="/" onclick="solve('/')" class="btn">
+            
+            <input type="button" value="7" onclick="solve('7')" class="btn">
+            <input type="button" value="8" onclick="solve('8')" class="btn">
+            <input type="button" value="9" onclick="solve('9')" class="btn">
+            <input type="button" value="x" onclick="solve('x')" class="btn">
+            
+            <input type="button" value="4" onclick="solve('4')" class="btn">
+            <input type="button" value="5" onclick="solve('5')" class="btn">
+            <input type="button" value="6" onclick="solve('6')" class="btn">
+            <input type="button" value="-" onclick="solve('-')" class="btn">
+            
+            <input type="button" value="1" onclick="solve('1')" class="btn">
+            <input type="button" value="2" onclick="solve('2')" class="btn">
+            <input type="button" value="3" onclick="solve('3')" class="btn">
+            <input type="button" value="+" onclick="solve('+')" class="btn">
+           
+            <input type="button" value="( )" onclick="brackets()" class="btn">
+            <input type="button" value="0" onclick="solve('0')" class="btn">
+            <input type="button" value="." onclick="solve('.')" class="btn">
+            <input type="button" value="=" onclick="equal()" class="btn">
+        </div>
+    </div>
+
+    <footer>
+        <small>Basic Calculator App | Made by Shashwat Mishra</small>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
