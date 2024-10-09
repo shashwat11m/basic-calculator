@@ -6,12 +6,14 @@ function solve(n) {
 }
 
 function equal() {
-    var num1 = addImplicitMultiplication(v.value);
-    try {
-        var num2 = eval(num1.replace('x', '*'));
-        v.value = num2;
-    } catch {
-        document.getElementById('res').value = 'Error';
+    if(v.value !== "") {
+        var num1 = addImplicitMultiplication(v.value);
+        try {
+            var num2 = eval(num1.replace('x', '*'));
+            v.value = num2;
+        } catch {
+            document.getElementById('res').value = 'Error';
+        }
     }
 }
 
